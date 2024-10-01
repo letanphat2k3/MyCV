@@ -1,0 +1,355 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cài đặt chung */
+#main {
+    overflow-y: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+/* Thiết lập cho 2 layout */
+.two-layout {
+    display: flex;
+    flex-grow: 1; 
+    height: 100%;
+}
+
+.layout1 {
+    width: 30%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0 0 20px;
+    height: auto; 
+    flex-grow: 1;
+}
+
+.layout2 {
+    width: 70%;
+    background-color: #fff;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    flex-grow: 1; 
+    margin-top: 20px;
+}
+
+.header-layout1 {
+    width: 100%;
+    height: auto;
+    background-color: #5B8F8F;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.header-layout1 .img-avata {
+    border-radius: 20px;
+    border: solid 5px #fff;
+    width: 200px;
+    height: 200px;
+}
+
+.header-layout2 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #5B8F8F;
+    height: 240px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    flex-direction: column;
+}
+
+.layout2 .header-layout2 h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+    word-spacing: 5px;
+    color: #fff;
+}
+
+.layout2 .header-layout2 h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.contact-section, .education-section, .skills-section, .objective-section {
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-section h2, 
+.education-section h2, 
+.technical-skills h2, 
+.general-skills h2, 
+.header-objective h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    color: #333;
+    border-bottom: 3px solid #5B8F8F;
+    padding-bottom: 5px;
+}
+
+.contact-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.contact-text a {
+    color: #5B8F8F;
+    text-decoration: none;
+}
+
+.contact-text a:hover {
+    text-decoration: underline;
+}
+
+.education-item h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.education-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5B8F8F;
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Skills Section */
+.skills-section ul, 
+.objective-content {
+    list-style-type: disc; 
+    margin-left: 20px; 
+}
+
+.skills-section ul li,
+.objective-content span {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.skills-section {
+    margin-top: 50px;
+}
+
+.technical-skills, 
+.general-skills {
+    margin-bottom: 30px;
+}
+
+/* Objective Section */
+.objective-section {
+    margin-top: 40px; 
+    margin-left: 20px; 
+    padding-right: 20px;
+    flex-direction: column;
+}
+
+
+.header-objective h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    color: #333;
+    border-bottom: 3px solid #5B8F8F;
+    padding-bottom: 5px;
+}
+
+.objective-content span {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.objective-content {
+    margin-top: 20px; 
+    text-align: justify; 
+}
+
+.personal-project-section {
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.header-personal-project h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    color: #333;
+    border-bottom: 3px solid #5B8F8F;
+    padding-bottom: 5px;
+}
+
+.personal-project-content {
+    margin-top: 20px;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5B8F8F;
+    margin-bottom: 5px;
+}
+
+.project-item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.project-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.project-item ul li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.project-item a {
+    color: #5B8F8F;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+.reference-section {
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.header-reference h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    color: #333;
+    border-bottom: 3px solid #5B8F8F;
+    padding-bottom: 5px;
+}
+
+.reference-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.reference-content a {
+    color: #5B8F8F;
+    text-decoration: none;
+}
+
+.reference-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive cho màn hình nhỏ hơn 768px (điện thoại) */
+@media (max-width: 768px) {
+    .two-layout {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .layout1, .layout2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header-layout1 {
+        padding: 10px 0;
+    }
+
+    .header-layout1 .img-avata {
+        width: 150px;
+        height: 150px;
+    }
+
+    .header-layout2 {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .layout2 .header-layout2 h1 {
+        font-size: 30px;
+    }
+
+    .layout2 .header-layout2 h3 {
+        font-size: 20px;
+    }
+
+    .contact-section, .education-section, .skills-section, .objective-section,
+    .personal-project-section, .reference-section {
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+    .contact-text, .education-item p, .objective-content span, .project-item p {
+        font-size: 14px;
+    }
+
+    /* Điều chỉnh kích thước font cho các tiêu đề */
+    .contact-section h2, .education-section h2, .technical-skills h2,
+    .general-skills h2, .header-objective h2, .header-personal-project h2,
+    .header-reference h2 {
+        font-size: 20px;
+    }
+}
